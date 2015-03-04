@@ -1,0 +1,33 @@
+#日志
+##nginx
+```
+/data1/logs/web/fanxing.kugou.git-access_log
+/data1/logs/web/fanxing.kugou.git-error_log
+```
+
+##php-fpm
+```
+/usr/local/php/var/log/php_fpm_error.log;
+```
+
+#服务
+
+##nginx
+```
+启动
+/usr/local/nginx/sbin/nginx
+重启
+/usr/local/nginx/sbin/nginx -s reload
+```
+
+##php
+```
+启动
+/usr/local/php/sbin/php-fpm
+关闭
+kill -INT `cat /usr/local/php/var/run/php-fpm.pid`
+重启
+kill -USR2 `cat /usr/local/php/var/run/php-fpm.pid`
+```
+
+
