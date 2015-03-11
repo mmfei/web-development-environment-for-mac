@@ -25,6 +25,10 @@ sudo cp /usr/local/mysql/support-files/my-default.cnf /etc/my.cnf
 
 sudo /usr/local/mysql/scripts/mysql_install_db --basedir=/usr/local/mysql --datadir=/data1/mysql --user=_mysql
 
+#解决Reason: image no found
+sudo ln -s /usr/local/mysql/lib /usr/local/mysql/lib/mysql;
+sudo ln -s /usr/local/mysql/lib/libmysqlclient.18.dylib /usr/lib/libmysqlclient.18.dylib;
+
 sudo /usr/local/mysql/bin/mysqladmin -u root password '新密码'
 
 #最后需要su - root 到root用户权限 , 去启动
