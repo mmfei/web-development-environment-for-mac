@@ -8,24 +8,24 @@ PHP(apcu,memceche,memcached,redis,handlersocket) + Nginx + Memcached + Redis + M
 
 ###nginx
 
-*. 
-*. mac.init.mysql.sh;
-*. mac.init.mysql.handlerSocket.plugin.sh;
-*. mac.init.mysql.python.MYSQLdb.sh;
-*. mac.init.nginx.sh;
-*. mac.init.redis.sh
-*. 
-*. 
-*. mac.init.php.sh
-*. mac.init.php.plugin.memcache.sh
-*. mac.init.php.plugin.redis.sh
-*. mac.init.php.plugin.apc.sh
-*. mac.init.php.plugin.handlerSocket.sh
-*. 
-*. mac.init.nodejs.sh
-*. mac.init.fis.sh
-*. 
-*. mac.init.readme
-*. 
-*. 
+
+* mac.init.mysql.sh;
+* mac.init.mysql.handlerSocket.plugin.sh;
+* mac.init.mysql.python.MYSQLdb.sh;
+* mac.init.nginx.sh;
+* mac.init.redis.sh
+* 
+* 
+* mac.init.php.sh
+* mac.init.php.plugin.memcache.sh
+* mac.init.php.plugin.redis.sh
+* mac.init.php.plugin.apc.sh
+* mac.init.php.plugin.handlerSocket.sh
+* 
+* mac.init.nodejs.sh
+* mac.init.fis.sh
+* 
+* mac.init.readme
+* 
+ 
 
