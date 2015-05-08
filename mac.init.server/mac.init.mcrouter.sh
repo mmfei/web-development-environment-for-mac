@@ -1,6 +1,6 @@
 pwd=`pwd`;
 git clone https://github.com/facebook/folly.git;
-cd folly;
+cd folly/folly;
 #for linux
 #autoreconf -ivf;
 #./configure --prefix=/usr/local/folly;
