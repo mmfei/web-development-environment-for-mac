@@ -34,7 +34,7 @@ cd $pwd;
 wget  http://www.freedesktop.org/software/harfbuzz/release/harfbuzz-1.1.2.tar.bz2;
 tar xvzf harfbuzz-1.1.2.tar.bz2 -C $dir;
 cd $dir/harfbuzz-1.1.2;
-./configure --prefix=/usr/local/harfbuzz.1.1.2
+./configure --prefix=/usr
 make 
 sudo make install
 
@@ -48,6 +48,8 @@ cd $dir/libpng-1.2.43
 make
 sudo make install 
 
+
+# yum install -y freetype-devel  #centos安装方式
 cd $pwd
 #4、安装 freetype
 wget http://download.savannah.gnu.org/releases/freetype/freetype-2.6.2.tar.gz;
