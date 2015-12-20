@@ -29,7 +29,14 @@ sudo make install
 #安装完成提示：
 #Libraries have been installed in:
 #/usr/local/jpeg6/lib
- 
+
+cd $pwd;
+wget  http://www.freedesktop.org/software/harfbuzz/release/harfbuzz-1.1.2.tar.bz2;
+tar xvzf harfbuzz-1.1.2.tar.bz2 -C $dir;
+cd $dir/harfbuzz-1.1.2;
+./configure --prefix=/usr/local/harfbuzz.1.1.2
+make 
+sudo make install
 
 cd $pwd
 #3、安装 libpng
