@@ -1,10 +1,13 @@
+cur=`pwd`;
+basedir="/data1/software/";
+tarballdir="$basedir/tarball";
 brew install cmake;
+cd $tarballdir;
+wget -c http://cdn.mysql.com/Downloads/MySQL-5.6/mysql-5.6.23.tar.gz; 
 
-wget http://cdn.mysql.com/Downloads/MySQL-5.6/mysql-5.6.23.tar.gz; 
+tar xvzf mysql-5.6.23.tar.gz $basedir; 
 
-tar xvzf mysql-5.6.23.tar.gz; 
-
-cd mysql-5.6.23;
+cd $basedir/mysql-5.6.23;
 
 cmake -DCMAKE_INSTALL_PREFIX=/usr/local/mysql.5.6.23 -DMYSQL_DATADIR=/data1/mysql -DEXTRA_CHARSETS=all -DDEFAULT_CHARSET=utf8 -DDEFAULT_COLLATION=utf8_general_ci -DWITH_INNOBASE_STORAGE_ENGINE=1 -DWITH_MYISAM_STORAGE_ENGINE=1 -DWITH_SSL=yes -DWITH_READLINE=on;
 
@@ -35,3 +38,5 @@ sudo /usr/local/mysql/bin/mysqladmin -u root password '新密码'
 #/usr/local/mysql/support-files/mysql.server start
 #关闭
 #/usr/local/mysql/support-files/mysql.server stop
+
+cd $cur;
